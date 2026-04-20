@@ -1,0 +1,97 @@
+/* === Science page === */
+.science-flow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) ;
+  gap: 16px;
+  align-items: stretch;
+}
+.science-step {
+  padding: 28px 24px;
+  background: linear-gradient(145deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  position: relative;
+  transition: all 0.4s var(--ease-out);
+}
+.science-step:hover {
+  border-color: rgba(59, 130, 246, 0.3);
+  transform: translateY(-4px);
+}
+.ss-num {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--blue-400), rgba(59, 130, 246, 0.2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+.ss-time {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--blue-300);
+  background: rgba(59, 130, 246, 0.1);
+  padding: 3px 10px;
+  border-radius: 100px;
+  margin-bottom: 14px;
+  letter-spacing: 0.05em;
+}
+.science-step h3 { font-size: 1.25rem; margin-bottom: 10px; }
+.science-step p { color: var(--text-dim); font-size: 14px; line-height: 1.6; }
+
+@media (max-width: 900px) {
+  .science-flow { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 520px) {
+  .science-flow { grid-template-columns: 1fr; }
+}
+
+/* Ketone diagram */
+.ketone-diagram {
+  margin-top: 80px;
+  padding: 48px;
+  background: linear-gradient(145deg, rgba(59, 130, 246, 0.05), rgba(255,255,255,0.02));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.kd-body h3 { margin-bottom: 16px; }
+.kd-body p { color: var(--text-dim); margin-bottom: 20px; }
+.kd-list { display: grid; gap: 12px; }
+.kd-list li {
+  display: flex; gap: 14px; align-items: flex-start;
+  padding: 14px 16px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+.kd-list .kd-chem {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--blue-300);
+  padding: 4px 10px;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.kd-list b { color: var(--text); display: block; font-size: 14px; }
+.kd-list span { color: var(--text-muted); font-size: 13px; }
+
+.kd-visual {
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.kd-visual svg { width: 100%; height: auto; }
+
+@media (max-width: 900px) {
+  .ketone-diagram { grid-template-columns: 1fr; padding: 32px; }
+}

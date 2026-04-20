@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Macros — Keto.Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/background.css" />
+<link rel="stylesheet" href="css/nav.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/macros.css" />
+<link rel="stylesheet" href="css/misc.css" />
+<link rel="stylesheet" href="css/mobile.css" />
+</head>
+<body>
+
+<div class="bg-wrap" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div class="bg-blob blob-3"></div>
+  <canvas id="particles"></canvas>
+</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">K</span><span class="brand-text">KETO<span class="dot">.</span>LAB</span>
+    </a>
+    <nav class="nav-links">
+      <a href="science.html">Science</a>
+      <a href="macros.html">Macros</a>
+      <a href="foods.html">Foods</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="research.html">Research</a>
+      <a href="getting-started.html">Start</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow reveal"><span class="pulse"></span> Chapter 02 — Precision nutrition</div>
+    <h1 class="reveal">The <span class="grad-text">75 · 20 · 5</span> Rule</h1>
+    <p class="lead reveal">
+      The standard ketogenic diet is defined by strict macronutrient ratios.
+      Too little fat, and you're hungry. Too much protein, and you'll be knocked out of ketosis.
+      Get these right — and ketosis becomes inevitable.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <svg width="0" height="0" style="position:absolute">
+      <defs>
+        <linearGradient id="fatGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#60a5fa"/><stop offset="100%" stop-color="#2563eb"/>
+        </linearGradient>
+        <linearGradient id="proteinGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#93c5fd"/><stop offset="100%" stop-color="#3b82f6"/>
+        </linearGradient>
+        <linearGradient id="carbGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#bfdbfe"/><stop offset="100%" stop-color="#60a5fa"/>
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <div class="macros-grid">
+      <div class="macro-card reveal">
+        <div class="donut">
+          <svg viewBox="0 0 120 120">
+            <circle class="donut-bg" cx="60" cy="60" r="50"/>
+            <circle class="donut-fg fat" cx="60" cy="60" r="50" stroke-dasharray="314" stroke-dashoffset="314" data-pct="75"/>
+          </svg>
+          <div class="donut-center"><span class="dc-num">75</span><span class="dc-unit">% fat</span></div>
+        </div>
+        <h3>Fat</h3>
+        <p>The fuel source. Avocado, olive oil, fatty fish, butter, eggs, nuts, and fatty cuts of meat.</p>
+        <div class="macro-meta">~165g daily <span>• based on 2000 kcal</span></div>
+      </div>
+
+      <div class="macro-card reveal">
+        <div class="donut">
+          <svg viewBox="0 0 120 120">
+            <circle class="donut-bg" cx="60" cy="60" r="50"/>
+            <circle class="donut-fg protein" cx="60" cy="60" r="50" stroke-dasharray="314" stroke-dashoffset="314" data-pct="20"/>
+          </svg>
+          <div class="donut-center"><span class="dc-num">20</span><span class="dc-unit">% protein</span></div>
+        </div>
+        <h3>Protein</h3>
+        <p>Moderate. Excess protein converts to glucose via gluconeogenesis — enough for muscle, not more.</p>
+        <div class="macro-meta">~75g daily <span>• based on 2000 kcal</span></div>
+      </div>
+
+      <div class="macro-card reveal">
+        <div class="donut">
+          <svg viewBox="0 0 120 120">
+            <circle class="donut-bg" cx="60" cy="60" r="50"/>
+            <circle class="donut-fg carb" cx="60" cy="60" r="50" stroke-dasharray="314" stroke-dashoffset="314" data-pct="5"/>
+          </svg>
+          <div class="donut-center"><span class="dc-num">5</span><span class="dc-unit">% carbs</span></div>
+        </div>
+        <h3>Carbs</h3>
+        <p>Strict. Under 20–50g net carbs daily, from leafy greens and low-sugar vegetables only.</p>
+        <div class="macro-meta">~20–40g daily <span>• net carbs</span></div>
+      </div>
+    </div>
+
+    <div class="calc reveal">
+      <h3>Your Personal Keto Macros</h3>
+      <p>Enter your stats to calculate your daily caloric needs and keto macro breakdown.</p>
+      <div class="calc-grid">
+        <form id="calc-form" class="calc-inputs" onsubmit="return false;">
+          <div class="calc-field">
+            <label for="c-age">Age</label>
+            <input id="c-age" type="number" value="35" min="15" max="100" />
+          </div>
+          <div class="calc-field">
+            <label for="c-sex">Biological sex</label>
+            <select id="c-sex">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <div class="calc-field">
+            <div class="field-head">
+              <label>Weight</label>
+              <div class="unit-toggle" data-unit="weight">
+                <button type="button" class="unit-btn active" data-val="kg">kg</button>
+                <button type="button" class="unit-btn" data-val="lb">lb</button>
+              </div>
+            </div>
+            <div class="input-wrap" data-show="kg">
+              <input id="c-weight" type="number" value="75" min="30" max="250" />
+            </div>
+            <div class="input-wrap" data-show="lb" style="display:none;">
+              <input id="c-weight-lb" type="number" value="165" min="65" max="550" />
+            </div>
+          </div>
+
+          <div class="calc-field">
+            <div class="field-head">
+              <label>Height</label>
+              <div class="unit-toggle" data-unit="height">
+                <button type="button" class="unit-btn active" data-val="cm">cm</button>
+                <button type="button" class="unit-btn" data-val="ft">ft/in</button>
+              </div>
+            </div>
+            <div class="input-wrap" data-show="cm">
+              <input id="c-height" type="number" value="175" min="120" max="220" />
+            </div>
+            <div class="input-wrap dual" data-show="ft" style="display:none;">
+              <input id="c-height-ft" type="number" value="5" min="3" max="8" placeholder="ft" />
+              <span class="dual-sep">ft</span>
+              <input id="c-height-in" type="number" value="9" min="0" max="11" placeholder="in" />
+              <span class="dual-sep">in</span>
+            </div>
+          </div>
+          <div class="calc-field">
+            <label for="c-activity">Activity level</label>
+            <select id="c-activity">
+              <option value="1.2">Sedentary (desk job, no exercise)</option>
+              <option value="1.375" selected>Light (1–3 days/week)</option>
+              <option value="1.55">Moderate (3–5 days/week)</option>
+              <option value="1.725">Active (6–7 days/week)</option>
+              <option value="1.9">Very active (physical job + training)</option>
+            </select>
+          </div>
+          <div class="calc-field">
+            <label for="c-goal">Goal</label>
+            <select id="c-goal">
+              <option value="lose">Lose fat (–20%)</option>
+              <option value="maintain" selected>Maintain</option>
+              <option value="gain">Build muscle (+10%)</option>
+            </select>
+          </div>
+        </form>
+
+        <div class="calc-results">
+          <div class="calc-result">
+            <span class="calc-result-label">Daily calories</span>
+            <span class="calc-result-val"><span id="r-cal">—</span><span>kcal</span></span>
+          </div>
+          <div class="calc-result">
+            <span class="calc-result-label">Fat (75%)</span>
+            <span class="calc-result-val"><span id="r-fat">—</span><span>g</span></span>
+          </div>
+          <div class="calc-result">
+            <span class="calc-result-label">Protein (20%)</span>
+            <span class="calc-result-val"><span id="r-pro">—</span><span>g</span></span>
+          </div>
+          <div class="calc-result">
+            <span class="calc-result-label">Carbs (5%)</span>
+            <span class="calc-result-val"><span id="r-carb">—</span><span>g</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:60px;" class="reveal">
+      <a href="foods.html" class="next-link">
+        <div>
+          <small>Next Chapter</small>
+          <span>03 — What's on your plate →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <div>© 2026 Keto.Lab — For family & friends</div>
+      <div><a href="index.html">← Back home</a></div>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<script src="js/particles.js"></script>
+<script src="js/main.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/calc.js"></script>
+</body>
+</html>

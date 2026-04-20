@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Science — Keto.Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/background.css" />
+<link rel="stylesheet" href="css/nav.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/science.css" />
+<link rel="stylesheet" href="css/misc.css" />
+<link rel="stylesheet" href="css/mobile.css" />
+</head>
+<body>
+
+<div class="bg-wrap" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div class="bg-blob blob-3"></div>
+  <canvas id="particles"></canvas>
+</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">K</span><span class="brand-text">KETO<span class="dot">.</span>LAB</span>
+    </a>
+    <nav class="nav-links">
+      <a href="science.html">Science</a>
+      <a href="macros.html">Macros</a>
+      <a href="foods.html">Foods</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="research.html">Research</a>
+      <a href="getting-started.html">Start</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow reveal"><span class="pulse"></span> Chapter 01 — Biochemistry</div>
+    <h1 class="reveal">The Science of <span class="grad-text">Ketosis</span></h1>
+    <p class="lead reveal">
+      Ketosis is a metabolic state where your liver converts fatty acids into <em>ketone bodies</em> —
+      clean-burning molecules that fuel your brain, muscles, and nearly every mitochondria-containing cell
+      in the absence of sufficient glucose.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag">The Metabolic Switch</div>
+      <h2>How your body <span class="grad-text">swaps fuel systems</span></h2>
+      <p class="lead">The transition happens over days. These are the four phases every keto dieter's body passes through.</p>
+    </div>
+
+    <div class="science-flow">
+      <div class="science-step reveal">
+        <div class="ss-num">01</div>
+        <div class="ss-time">Day 0–2</div>
+        <h3>Carbs drop below 50g</h3>
+        <p>Restricting carbohydrates depletes liver glycogen within 24–48 hours. Blood glucose falls; the body begins signalling for alternative fuel.</p>
+      </div>
+      <div class="science-step reveal">
+        <div class="ss-num">02</div>
+        <div class="ss-time">Day 2–4</div>
+        <h3>Insulin plummets</h3>
+        <p>Low insulin unlocks adipose tissue. Hormone-sensitive lipase releases free fatty acids into circulation at accelerated rates.</p>
+      </div>
+      <div class="science-step reveal">
+        <div class="ss-num">03</div>
+        <div class="ss-time">Day 3–7</div>
+        <h3>Liver produces ketones</h3>
+        <p>Hepatocyte mitochondria β-oxidize fatty acids into acetyl-CoA, then condense them into ketone bodies via HMG-CoA synthase.</p>
+      </div>
+      <div class="science-step reveal">
+        <div class="ss-num">04</div>
+        <div class="ss-time">Week 2–4</div>
+        <h3>Fat adaptation</h3>
+        <p>Tissues upregulate monocarboxylate transporters (MCT1/2) and ketolytic enzymes. You're now efficiently fat-fueled.</p>
+      </div>
+    </div>
+
+    <div class="ketone-diagram reveal">
+      <div class="kd-body">
+        <div class="tag">Ketone Bodies</div>
+        <h3>The three molecules that replace glucose</h3>
+        <p>During ketogenesis, the liver produces three distinct ketone bodies. Each has a specific role in cellular energy metabolism.</p>
+        <ul class="kd-list">
+          <li>
+            <span class="kd-chem">BHB</span>
+            <div><b>β-Hydroxybutyrate</b><span>Primary blood ketone. Crosses the blood-brain barrier. What ketone meters measure.</span></div>
+          </li>
+          <li>
+            <span class="kd-chem">AcAc</span>
+            <div><b>Acetoacetate</b><span>First ketone made. Detected by urine strips. Converted to BHB in tissues.</span></div>
+          </li>
+          <li>
+            <span class="kd-chem">C₃H₆O</span>
+            <div><b>Acetone</b><span>Volatile byproduct. Exhaled through breath — the source of "keto breath."</span></div>
+          </li>
+        </ul>
+      </div>
+      <div class="kd-visual">
+        <svg viewBox="0 0 300 300" fill="none" stroke="#60a5fa" stroke-width="1.5">
+          <circle cx="150" cy="150" r="120" stroke-dasharray="4 6" opacity="0.3"/>
+          <circle cx="150" cy="150" r="80" stroke-dasharray="4 6" opacity="0.5"/>
+          <g>
+            <circle cx="150" cy="60" r="22" fill="#1e40af"/>
+            <text x="150" y="66" text-anchor="middle" fill="#fff" font-family="Space Grotesk" font-size="13" font-weight="700">BHB</text>
+          </g>
+          <g>
+            <circle cx="65" cy="200" r="20" fill="#2563eb"/>
+            <text x="65" y="205" text-anchor="middle" fill="#fff" font-family="Space Grotesk" font-size="11" font-weight="700">AcAc</text>
+          </g>
+          <g>
+            <circle cx="235" cy="200" r="18" fill="#3b82f6"/>
+            <text x="235" y="205" text-anchor="middle" fill="#fff" font-family="Space Grotesk" font-size="10" font-weight="700">Ac</text>
+          </g>
+          <g stroke-width="1">
+            <line x1="150" y1="82" x2="85" y2="180"/>
+            <line x1="150" y1="82" x2="215" y2="180"/>
+            <line x1="85" y1="215" x2="215" y2="215"/>
+          </g>
+          <circle cx="150" cy="150" r="10" fill="#60a5fa"/>
+          <text x="150" y="275" text-anchor="middle" fill="#93c5fd" font-family="Space Grotesk" font-size="11">LIVER — HEPATIC KETOGENESIS</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag">Cellular Impact</div>
+      <h2>Why ketones are <span class="grad-text">cleaner fuel</span></h2>
+    </div>
+
+    <div class="benefits-grid">
+      <div class="benefit reveal">
+        <div class="benefit-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7v8l10-12h-7V2z"/></svg>
+        </div>
+        <h3>More ATP per oxygen</h3>
+        <p>BHB produces more ATP per unit of oxygen than glucose — a more efficient cellular energy yield, especially under stress.</p>
+      </div>
+      <div class="benefit reveal">
+        <div class="benefit-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+        </div>
+        <h3>Less oxidative stress</h3>
+        <p>Ketone metabolism generates fewer reactive oxygen species (ROS) than glucose metabolism — reduced cellular damage over time.</p>
+      </div>
+      <div class="benefit reveal">
+        <div class="benefit-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6l-2 4h4l-7 14v-8H6z"/></svg>
+        </div>
+        <h3>Signaling molecule</h3>
+        <p>BHB is more than fuel — it's an HDAC inhibitor that upregulates genes involved in longevity, stress resistance, and antioxidant defense.</p>
+      </div>
+      <div class="benefit reveal">
+        <div class="benefit-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+        </div>
+        <h3>Brain preferred substrate</h3>
+        <p>Under ketosis, the brain derives up to 70% of its energy from ketones — particularly protective in neurodegenerative conditions.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:60px;" class="reveal">
+      <a href="macros.html" class="next-link">
+        <div>
+          <small>Next Chapter</small>
+          <span>02 — Dialing in your macros →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <div>© 2026 Keto.Lab — For family & friends</div>
+      <div><a href="index.html">← Back home</a></div>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<script src="js/particles.js"></script>
+<script src="js/main.js"></script>
+<script src="js/reveal.js"></script>
+</body>
+</html>

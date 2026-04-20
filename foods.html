@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Foods — Keto.Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/background.css" />
+<link rel="stylesheet" href="css/nav.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/foods.css" />
+<link rel="stylesheet" href="css/misc.css" />
+<link rel="stylesheet" href="css/mobile.css" />
+</head>
+<body>
+
+<div class="bg-wrap" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div class="bg-blob blob-3"></div>
+  <canvas id="particles"></canvas>
+</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">K</span><span class="brand-text">KETO<span class="dot">.</span>LAB</span>
+    </a>
+    <nav class="nav-links">
+      <a href="science.html">Science</a>
+      <a href="macros.html">Macros</a>
+      <a href="foods.html">Foods</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="research.html">Research</a>
+      <a href="getting-started.html">Start</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow reveal"><span class="pulse"></span> Chapter 03 — What to eat</div>
+    <h1 class="reveal">What's on the <span class="grad-text">keto plate</span></h1>
+    <p class="lead reveal">
+      A clear, no-nonsense list of keto-friendly foods and the carb landmines to avoid.
+      Print this. Stick it on your fridge. Shop accordingly.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="foods-grid">
+      <div class="food-col eat reveal">
+        <div class="food-header">
+          <div class="food-icon">✓</div>
+          <h3>Eat Freely</h3>
+        </div>
+        <ul class="food-list">
+          <li><b>Meat & poultry</b><span>beef, pork, chicken, lamb, bacon, game</span></li>
+          <li><b>Fatty fish & seafood</b><span>salmon, sardines, mackerel, trout, tuna, shrimp</span></li>
+          <li><b>Eggs</b><span>whole, pasture-raised preferred</span></li>
+          <li><b>Healthy oils</b><span>olive, avocado, coconut, MCT</span></li>
+          <li><b>Full-fat dairy</b><span>butter, cream, hard cheeses, sour cream</span></li>
+          <li><b>Nuts & seeds</b><span>almonds, walnuts, pecans, macadamias, chia, flax</span></li>
+          <li><b>Low-carb vegetables</b><span>spinach, kale, broccoli, cauliflower, zucchini</span></li>
+          <li><b>Avocado</b><span>unlimited — nearly perfect keto food</span></li>
+          <li><b>Berries (small portions)</b><span>raspberries, blackberries, strawberries</span></li>
+          <li><b>Dark chocolate</b><span>85%+ cacao, small squares</span></li>
+        </ul>
+      </div>
+
+      <div class="food-col avoid reveal">
+        <div class="food-header">
+          <div class="food-icon">✕</div>
+          <h3>Avoid</h3>
+        </div>
+        <ul class="food-list">
+          <li><b>Grains</b><span>wheat, rice, oats, corn, quinoa, pasta, bread</span></li>
+          <li><b>Sugar</b><span>soda, candy, desserts, juice, honey, syrup</span></li>
+          <li><b>Starchy vegetables</b><span>potatoes, sweet potatoes, yams, parsnips</span></li>
+          <li><b>Most fruit</b><span>bananas, apples, grapes, oranges, tropical</span></li>
+          <li><b>Legumes</b><span>beans, lentils, chickpeas, peas</span></li>
+          <li><b>Low-fat products</b><span>usually high in added sugar</span></li>
+          <li><b>Refined oils</b><span>soybean, corn, canola, margarine</span></li>
+          <li><b>Most alcohol</b><span>beer, sweet wine, mixers, cocktails</span></li>
+          <li><b>Processed "keto" snacks</b><span>often hide carbs as sugar alcohols</span></li>
+          <li><b>Dried fruit</b><span>concentrated sugar — a keto landmine</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-head reveal" style="margin-top:100px; margin-bottom:40px;">
+      <div class="tag">Sample Day</div>
+      <h2>A full day of <span class="grad-text">keto eating</span></h2>
+      <p class="lead">Here's what a typical, delicious day on keto looks like — hitting all your macros.</p>
+    </div>
+
+    <div class="meals">
+      <div class="meal reveal">
+        <div class="meal-time">Breakfast</div>
+        <h4>Bacon, eggs & avocado</h4>
+        <ul>
+          <li>3 eggs scrambled in butter</li>
+          <li>3 strips thick-cut bacon</li>
+          <li>½ avocado, sliced</li>
+          <li>Black coffee with heavy cream</li>
+        </ul>
+        <div class="meal-macros">
+          <span><b>F</b> 48g</span><span><b>P</b> 32g</span><span><b>C</b> 4g</span>
+        </div>
+      </div>
+
+      <div class="meal reveal">
+        <div class="meal-time">Lunch</div>
+        <h4>Salmon & greens bowl</h4>
+        <ul>
+          <li>6oz wild salmon, olive oil</li>
+          <li>Mixed greens, cucumber, feta</li>
+          <li>Olive oil + lemon dressing</li>
+          <li>Handful of walnuts</li>
+        </ul>
+        <div class="meal-macros">
+          <span><b>F</b> 55g</span><span><b>P</b> 38g</span><span><b>C</b> 6g</span>
+        </div>
+      </div>
+
+      <div class="meal reveal">
+        <div class="meal-time">Snack</div>
+        <h4>Cheese & olives</h4>
+        <ul>
+          <li>2oz aged cheddar</li>
+          <li>Handful of kalamata olives</li>
+          <li>Celery sticks + almond butter</li>
+        </ul>
+        <div class="meal-macros">
+          <span><b>F</b> 28g</span><span><b>P</b> 10g</span><span><b>C</b> 3g</span>
+        </div>
+      </div>
+
+      <div class="meal reveal">
+        <div class="meal-time">Dinner</div>
+        <h4>Ribeye & cauliflower mash</h4>
+        <ul>
+          <li>8oz ribeye in butter</li>
+          <li>Cauliflower mash with cream</li>
+          <li>Sautéed spinach, garlic</li>
+          <li>Square of 90% dark chocolate</li>
+        </ul>
+        <div class="meal-macros">
+          <span><b>F</b> 62g</span><span><b>P</b> 48g</span><span><b>C</b> 7g</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:60px;" class="reveal">
+      <a href="benefits.html" class="next-link">
+        <div>
+          <small>Next Chapter</small>
+          <span>04 — Evidence-based benefits →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <div>© 2026 Keto.Lab — For family & friends</div>
+      <div><a href="index.html">← Back home</a></div>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<script src="js/particles.js"></script>
+<script src="js/main.js"></script>
+<script src="js/reveal.js"></script>
+</body>
+</html>

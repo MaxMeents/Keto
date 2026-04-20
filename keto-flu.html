@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Keto Flu — Keto.Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/background.css" />
+<link rel="stylesheet" href="css/nav.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/misc.css" />
+<link rel="stylesheet" href="css/mobile.css" />
+</head>
+<body>
+
+<div class="bg-wrap" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div class="bg-blob blob-3"></div>
+  <canvas id="particles"></canvas>
+</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">K</span><span class="brand-text">KETO<span class="dot">.</span>LAB</span>
+    </a>
+    <nav class="nav-links">
+      <a href="science.html">Science</a>
+      <a href="macros.html">Macros</a>
+      <a href="foods.html">Foods</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="research.html">Research</a>
+      <a href="getting-started.html">Start</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow reveal"><span class="pulse"></span> Chapter 06 — The transition</div>
+    <h1 class="reveal">The <span class="grad-text">Keto Flu</span></h1>
+    <p class="lead reveal">
+      Days 2–7 can be rough as your body rewires its fuel system.
+      Nearly all symptoms trace back to one thing: <b>electrolyte depletion</b>.
+      Here's the science — and the protocol that prevents it entirely.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="flu-wrap">
+      <div class="flu-card symptoms reveal">
+        <h3>Common symptoms</h3>
+        <p style="color:var(--text-dim); margin-bottom:20px; font-size:14px;">These appear within the first few days of carb restriction as your body burns through glycogen and loses associated water and minerals.</p>
+        <div class="chips">
+          <span>Headache</span><span>Fatigue</span><span>Brain fog</span>
+          <span>Muscle cramps</span><span>Nausea</span><span>Irritability</span>
+          <span>Sugar cravings</span><span>Poor sleep</span><span>Dizziness</span>
+          <span>Constipation</span><span>Weakness</span><span>Heart palpitations</span>
+        </div>
+        <div class="flu-note">Typically resolves within 3–7 days, though mild symptoms may persist up to 4 weeks during full fat-adaptation.</div>
+      </div>
+
+      <div class="flu-card fix reveal">
+        <h3>The fix: electrolytes</h3>
+        <p style="color:var(--text-dim); margin-bottom:20px; font-size:14px;">Insulin drops cause kidneys to excrete sodium rapidly, pulling other minerals with it. Replacing them resolves symptoms within hours.</p>
+        <ul class="fix-list">
+          <li>
+            <div class="fix-k">Na</div>
+            <div><b>Sodium — 3–5g/day</b><span>Salt your food generously, bone broth, pickle juice, sea salt in water.</span></div>
+          </li>
+          <li>
+            <div class="fix-k">K</div>
+            <div><b>Potassium — 1–3.5g/day</b><span>Avocado, spinach, salmon, mushrooms, coconut water (unsweetened).</span></div>
+          </li>
+          <li>
+            <div class="fix-k">Mg</div>
+            <div><b>Magnesium — 300–500mg/day</b><span>Dark chocolate, almonds, pumpkin seeds, or glycinate supplement.</span></div>
+          </li>
+          <li>
+            <div class="fix-k">H₂O</div>
+            <div><b>Hydration — 3L+/day</b><span>Water + electrolytes. Plain water alone dilutes minerals further.</span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-head reveal" style="margin-top:100px;">
+      <div class="tag">Prevention Protocol</div>
+      <h2>How to <span class="grad-text">skip the flu entirely</span></h2>
+      <p class="lead">Most people who experience keto flu simply underestimated mineral replacement. Do this from day one:</p>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-step reveal">
+        <div class="tl-dot">1</div>
+        <div class="tl-card">
+          <h4>Start salt-loading on day 1</h4>
+          <p>Add 1 tsp (6g) of real salt to your water or broth. Spread across the day. Don't wait for symptoms.</p>
+        </div>
+      </div>
+      <div class="tl-step reveal">
+        <div class="tl-dot">2</div>
+        <div class="tl-card">
+          <h4>Supplement magnesium at night</h4>
+          <p>300–400mg magnesium glycinate before bed. Prevents cramps, improves sleep quality during the transition.</p>
+        </div>
+      </div>
+      <div class="tl-step reveal">
+        <div class="tl-dot">3</div>
+        <div class="tl-card">
+          <h4>Front-load potassium foods</h4>
+          <p>A large avocado daily + leafy greens at every meal. Most people's potassium intake on keto is dangerously low otherwise.</p>
+        </div>
+      </div>
+      <div class="tl-step reveal">
+        <div class="tl-dot">4</div>
+        <div class="tl-card">
+          <h4>Eat enough fat</h4>
+          <p>A common mistake: cutting carbs without increasing fat. You'll feel exhausted. Hit 70–75% of calories from fat from day one.</p>
+        </div>
+      </div>
+      <div class="tl-step reveal">
+        <div class="tl-dot">5</div>
+        <div class="tl-card">
+          <h4>Prioritize sleep</h4>
+          <p>8–9 hours. Your body is rebuilding its metabolic infrastructure. Stress and sleep deprivation amplify symptoms.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:60px;" class="reveal">
+      <a href="getting-started.html" class="next-link">
+        <div>
+          <small>Next Chapter</small>
+          <span>07 — Getting started, step by step →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <div>© 2026 Keto.Lab — For family & friends</div>
+      <div><a href="index.html">← Back home</a></div>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<script src="js/particles.js"></script>
+<script src="js/main.js"></script>
+<script src="js/reveal.js"></script>
+</body>
+</html>

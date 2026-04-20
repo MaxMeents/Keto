@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Keto.Lab — The Science of Ketosis</title>
+<meta name="description" content="A modern, research-backed guide to the ketogenic diet and ketosis." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/background.css" />
+<link rel="stylesheet" href="css/nav.css" />
+<link rel="stylesheet" href="css/hero.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/misc.css" />
+<link rel="stylesheet" href="css/mobile.css" />
+</head>
+<body>
+
+<div class="bg-wrap" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div class="bg-blob blob-3"></div>
+  <canvas id="particles"></canvas>
+</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">K</span>
+      <span class="brand-text">KETO<span class="dot">.</span>LAB</span>
+    </a>
+    <nav class="nav-links">
+      <a href="science.html">Science</a>
+      <a href="macros.html">Macros</a>
+      <a href="foods.html">Foods</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="research.html">Research</a>
+      <a href="getting-started.html">Start</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="eyebrow"><span class="pulse"></span> Backed by 2025–2026 research</div>
+      <h1 class="hero-title">
+        The Science of<br/>
+        <span class="grad-text">Ketosis</span>,<br/>
+        Decoded.
+      </h1>
+      <p class="hero-sub">
+        A precise, research-driven guide to the ketogenic diet — how it works, what to eat,
+        and what the newest clinical studies actually reveal about your metabolism, brain, and body.
+      </p>
+      <div class="hero-cta">
+        <a href="science.html" class="btn btn-primary">
+          Explore the Science
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="research.html" class="btn btn-ghost">Latest Studies</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-count="75">0</span><span class="stat-unit">%</span>
+          <div class="stat-label">Calories from fat</div>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="20">0</span><span class="stat-unit">g</span>
+          <div class="stat-label">Net carbs daily</div>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="100">0</span><span class="stat-unit">+</span>
+          <div class="stat-label">Peer-reviewed studies</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="orb">
+        <div class="orb-ring ring-1"></div>
+        <div class="orb-ring ring-2"></div>
+        <div class="orb-ring ring-3"></div>
+        <div class="orb-core">
+          <svg viewBox="0 0 100 100" class="molecule">
+            <circle cx="50" cy="50" r="6" fill="#3b82f6"/>
+            <circle cx="25" cy="30" r="4" fill="#ffffff"/>
+            <circle cx="75" cy="30" r="4" fill="#ffffff"/>
+            <circle cx="25" cy="70" r="4" fill="#ffffff"/>
+            <circle cx="75" cy="70" r="4" fill="#ffffff"/>
+            <line x1="50" y1="50" x2="25" y2="30" stroke="#60a5fa" stroke-width="1.5"/>
+            <line x1="50" y1="50" x2="75" y2="30" stroke="#60a5fa" stroke-width="1.5"/>
+            <line x1="50" y1="50" x2="25" y2="70" stroke="#60a5fa" stroke-width="1.5"/>
+            <line x1="50" y1="50" x2="75" y2="70" stroke="#60a5fa" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+      <div class="float-card card-a">
+        <div class="fc-label">β-Hydroxybutyrate</div>
+        <div class="fc-val">2.8 <span>mmol/L</span></div>
+        <div class="fc-bar"><span style="width:78%"></span></div>
+      </div>
+      <div class="float-card card-b">
+        <div class="fc-label">Glucose</div>
+        <div class="fc-val">74 <span>mg/dL</span></div>
+        <div class="fc-bar"><span style="width:32%"></span></div>
+      </div>
+      <div class="float-card card-c">
+        <div class="fc-label">Ketosis</div>
+        <div class="fc-val green">ACTIVE</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag">Explore the Guide</div>
+      <h2>Everything you need, <span class="grad-text">in one place</span></h2>
+      <p class="lead">Each chapter breaks down a key concept — from the biochemistry of ketosis to practical meal planning.</p>
+    </div>
+
+    <div class="benefits-grid">
+      <a href="science.html" class="benefit reveal">
+        <div class="benefit-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M7 7l3 3M14 10l3-3M7 17l3-3M14 14l3 3"/></svg>
+        </div>
+        <h3>The Science</h3>
+        <p>How your liver builds ketones from fat, and why every cell in your body can run on them.</p>
+      </a>
+      <a href="macros.html" class="benefit reveal">
+        <div class="benefit-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 9 9h-9z" fill="currentColor" opacity=".3"/></svg>
+        </div>
+        <h3>The Macros</h3>
+        <p>75% fat, 20% protein, 5% carbs. A calculator helps you dial in your personal numbers.</p>
+      </a>
+      <a href="foods.html" class="benefit reveal">
+        <div class="benefit-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12c0-5 4-9 9-9s9 4 9 9c0 3-2 5-4 5h-4l-2 4-2-4H7c-2 0-4-2-4-5z"/></svg>
+        </div>
+        <h3>Food Lists</h3>
+        <p>What to eat, what to avoid, and a full sample day of keto-friendly meals.</p>
+      </a>
+      <a href="benefits.html" class="benefit reveal">
+        <div class="benefit-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+        </div>
+        <h3>Evidence-Based Benefits</h3>
+        <p>Weight loss, cognition, epilepsy, mental health — what the data actually shows.</p>
+      </a>
+      <a href="research.html" class="benefit reveal">
+        <div class="benefit-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></svg>
+        </div>
+        <h3>2025–2026 Studies</h3>
+        <p>Fresh from Stanford, Nature, Science Advances, and top clinical journals.</p>
+      </a>
+      <a href="keto-flu.html" class="benefit reveal">
+        <div class="benefit-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-4-8-12V5l8-3 8 3v5c0 8-8 12-8 12z"/></svg>
+        </div>
+        <h3>Keto Flu Survival</h3>
+        <p>The 3-day adjustment window and the electrolyte protocol that eliminates symptoms.</p>
+      </a>
+      <a href="getting-started.html" class="benefit reveal">
+        <div class="benefit-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4z" fill="currentColor"/></svg>
+        </div>
+        <h3>Getting Started</h3>
+        <p>An 8-step protocol to enter ketosis safely and stay there.</p>
+      </a>
+      <a href="faq.html" class="benefit reveal">
+        <div class="benefit-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01"/></svg>
+        </div>
+        <h3>FAQ</h3>
+        <p>Honest answers to the questions everyone actually has before starting.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="cta-box reveal">
+    <h2>Knowledge is the <span class="grad-text">first macro</span>.</h2>
+    <p>Built with care for family. Start with the science, then make your own informed choice.</p>
+    <a href="science.html" class="btn btn-primary">
+      Begin with the Science
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-about">
+        <div class="brand">
+          <span class="brand-mark">K</span>
+          <span class="brand-text">KETO<span class="dot">.</span>LAB</span>
+        </div>
+        <p>A private, research-driven guide to ketosis for family and friends. Built with care — not a commercial venture.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="science.html">The Science</a></li>
+          <li><a href="macros.html">Macros</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="research.html">Research</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Practice</h4>
+        <ul>
+          <li><a href="foods.html">Food Lists</a></li>
+          <li><a href="getting-started.html">Getting Started</a></li>
+          <li><a href="keto-flu.html">Keto Flu</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Disclaimer</h4>
+        <ul>
+          <li style="color:var(--text-muted);font-size:12px;line-height:1.6;">Educational content only. Not medical advice. Consult your physician before making dietary changes.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Keto.Lab — A private guide for family & friends.</div>
+      <div>Research compiled April 2026</div>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<script src="js/particles.js"></script>
+<script src="js/main.js"></script>
+<script src="js/reveal.js"></script>
+</body>
+</html>

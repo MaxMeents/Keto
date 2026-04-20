@@ -1,0 +1,265 @@
+/* === Mobile refinements === */
+
+/* Prevent horizontal scroll globally */
+html, body { max-width: 100vw; overflow-x: hidden; }
+
+@media (max-width: 1024px) {
+  .container { padding: 0 20px; }
+}
+
+/* ---- Nav ---- */
+@media (max-width: 900px) {
+  .nav { top: 12px; width: calc(100% - 24px); }
+  .nav-inner { padding: 10px 14px 10px 18px; }
+  .brand-text { font-size: 14px; }
+  .brand-mark { width: 28px; height: 28px; font-size: 14px; }
+}
+
+/* ---- Hero ---- */
+@media (max-width: 900px) {
+  .hero { padding: 130px 20px 60px; min-height: auto; }
+  .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+  .hero-content { max-width: 100%; text-align: left; }
+  .hero-title {
+    font-size: clamp(2.25rem, 10vw, 3.5rem);
+    line-height: 1;
+  }
+  .hero-sub { font-size: 1rem; max-width: 100%; margin-bottom: 28px; }
+  .hero-cta { margin-bottom: 40px; }
+  .hero-cta .btn { flex: 1; justify-content: center; min-width: 140px; }
+
+  .hero-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding-top: 24px;
+  }
+  .stat-num {
+    font-size: clamp(1.25rem, 6vw, 1.75rem);
+  }
+  .stat-unit { font-size: 1rem; }
+  .stat-label { font-size: 11px; }
+
+  /* Hero visual — contain within viewport */
+  .hero-visual {
+    max-width: 320px;
+    aspect-ratio: 1;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+  }
+  .float-card { padding: 8px 12px; min-width: 110px; font-size: 12px; }
+  .fc-val { font-size: 15px; }
+  .fc-val span { font-size: 10px; }
+  .fc-label { font-size: 9px; }
+  .card-a { top: 0; left: -4px; }
+  .card-b { bottom: 8%; right: -4px; }
+  .card-c { bottom: -4px; left: 14%; }
+  .scroll-hint { display: none; }
+}
+
+@media (max-width: 480px) {
+  .hero-stats { grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+  .hero-stats .stat { min-width: 0; }
+  .stat-num { font-size: 1.25rem; }
+  .stat-unit { font-size: 0.85rem; margin-left: 1px; }
+  .stat-label { font-size: 10px; line-height: 1.3; }
+
+  .hero-visual { max-width: 280px; padding: 10px; }
+  .float-card { min-width: 96px; padding: 7px 10px; }
+  .fc-val { font-size: 13px; }
+}
+
+/* ---- Page hero (subpages) ---- */
+@media (max-width: 900px) {
+  .page-hero { padding: 120px 20px 60px; }
+  .page-hero h1 { font-size: clamp(2rem, 9vw, 3rem); margin: 16px 0 20px; }
+  .page-hero .lead { font-size: 0.98rem; line-height: 1.65; }
+}
+
+/* ---- Section spacing ---- */
+@media (max-width: 900px) {
+  .section { padding: 72px 0; }
+  .section-head { margin-bottom: 48px; }
+  .section-head h2 { font-size: clamp(1.75rem, 6.5vw, 2.5rem); }
+  .lead { font-size: 0.98rem; line-height: 1.65; }
+  .tag { font-size: 11px; margin-bottom: 16px; }
+}
+
+/* ---- Buttons touch targets ---- */
+@media (max-width: 900px) {
+  .btn { padding: 13px 22px; font-size: 14px; min-height: 44px; }
+}
+
+/* ---- Benefits grid ---- */
+@media (max-width: 700px) {
+  .benefits-grid { grid-template-columns: 1fr; gap: 16px; }
+  .benefit, .feature-card { padding: 24px; }
+  .benefit h3, .feature-card h3 { font-size: 1.15rem; }
+  .benefit p, .feature-card p { font-size: 14px; }
+  .benefit-ico, .feature-ico { width: 44px; height: 44px; margin-bottom: 16px; }
+  .benefit-ico svg, .feature-ico svg { width: 20px; height: 20px; }
+}
+
+/* ---- Science steps ---- */
+@media (max-width: 900px) {
+  .science-flow { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .science-step { padding: 20px 18px; }
+  .ss-num { font-size: 36px; margin-bottom: 12px; }
+  .science-step h3 { font-size: 1.05rem; }
+  .science-step p { font-size: 13px; }
+}
+@media (max-width: 520px) {
+  .science-flow { grid-template-columns: 1fr; }
+}
+
+/* ---- Ketone diagram ---- */
+@media (max-width: 900px) {
+  .ketone-diagram { padding: 28px 22px; gap: 28px; margin-top: 56px; }
+  .kd-list li { padding: 12px; gap: 10px; }
+  .kd-list .kd-chem { font-size: 12px; padding: 3px 8px; }
+  .kd-visual { max-width: 280px; margin: 0 auto; }
+}
+
+/* ---- Macros ---- */
+@media (max-width: 900px) {
+  .macros-grid { grid-template-columns: 1fr; gap: 20px; }
+  .macro-card { padding: 32px 24px; }
+  .donut { width: 150px; height: 150px; }
+  .dc-num { font-size: 44px; }
+  .dc-unit { font-size: 13px; }
+}
+
+/* ---- Calculator ---- */
+@media (max-width: 800px) {
+  .calc { padding: 24px 20px; margin-top: 56px; }
+  .calc-grid { grid-template-columns: 1fr; gap: 24px; }
+  .calc-inputs { gap: 16px; }
+  .calc-field input, .calc-field select {
+    padding: 12px 14px; font-size: 16px; /* prevent iOS zoom */
+  }
+  .calc-results { padding: 20px; gap: 12px; }
+  .calc-result-val { font-size: 20px; }
+  .calc-result-label { font-size: 13px; }
+}
+
+/* ---- Foods ---- */
+@media (max-width: 800px) {
+  .foods-grid { grid-template-columns: 1fr; gap: 20px; }
+  .food-col { padding: 24px 20px; }
+  .food-header h3 { font-size: 1.3rem; }
+  .food-icon { width: 38px; height: 38px; font-size: 17px; }
+  .food-list li { padding: 12px 14px; }
+  .food-list li b { font-size: 13px; }
+  .food-list li span { font-size: 12px; }
+}
+
+/* ---- Meals ---- */
+@media (max-width: 700px) {
+  .meals { grid-template-columns: 1fr; gap: 16px; margin-top: 40px; }
+  .meal { padding: 22px 20px; }
+  .meal-macros { flex-wrap: wrap; gap: 8px; }
+}
+
+/* ---- Studies ---- */
+@media (max-width: 800px) {
+  .studies { grid-template-columns: 1fr; gap: 16px; }
+  .study { padding: 24px 20px; }
+  .study h3 { font-size: 1.15rem; }
+  .study p { font-size: 13.5px; }
+}
+
+/* Findings grid */
+@media (max-width: 700px) {
+  .findings { padding: 32px 22px; margin-top: 56px; }
+  .findings-grid { grid-template-columns: 1fr 1fr; gap: 18px; }
+  .finding-num { font-size: 2.25rem; }
+  .finding-label { font-size: 12px; }
+}
+
+/* ---- Keto flu ---- */
+@media (max-width: 800px) {
+  .flu-wrap { grid-template-columns: 1fr; gap: 20px; }
+  .flu-card { padding: 26px 22px; }
+  .chips span { font-size: 12px; padding: 5px 11px; }
+  .fix-list li { padding: 14px; gap: 12px; }
+  .fix-k { width: 40px; height: 40px; font-size: 12px; }
+  .fix-list li b { font-size: 13px; }
+  .fix-list li span { font-size: 12px; }
+}
+
+/* ---- Timeline ---- */
+@media (max-width: 600px) {
+  .timeline::before { left: 20px; }
+  .tl-step { padding-left: 60px; padding-bottom: 28px; }
+  .tl-dot { width: 42px; height: 42px; font-size: 15px; border-width: 3px; }
+  .tl-card { padding: 20px 22px; }
+  .tl-card h4 { font-size: 1.05rem; }
+  .tl-card p { font-size: 13.5px; }
+}
+
+/* ---- FAQ ---- */
+@media (max-width: 700px) {
+  .faq summary { padding: 18px 20px; font-size: 14.5px; gap: 12px; }
+  .faq summary::after { font-size: 20px; }
+  .faq details p { padding: 0 20px 20px; font-size: 14px; line-height: 1.65; }
+}
+
+/* ---- CTA box ---- */
+@media (max-width: 700px) {
+  .cta-box { padding: 48px 24px; }
+  .cta-box h2 { font-size: clamp(1.5rem, 7vw, 2rem) !important; }
+  .cta-box p { font-size: 0.95rem; }
+  .final-cta { padding: 72px 20px; }
+}
+
+/* ---- Footer ---- */
+@media (max-width: 700px) {
+  .site-footer { padding: 40px 0 32px; margin-top: 48px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-about { grid-column: auto; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; font-size: 12px; }
+}
+
+/* ---- Next-link ---- */
+@media (max-width: 600px) {
+  .next-link { padding: 16px 22px; font-size: 14px; width: 100%; justify-content: center; box-sizing: border-box; }
+}
+
+/* ---- Hide expensive effects on mobile ---- */
+@media (max-width: 768px) {
+  .cursor-dot, .cursor-ring { display: none !important; }
+  .bg-blob { opacity: 0.18; filter: blur(70px); }
+  .bg-grid { background-size: 40px 40px; }
+}
+
+/* Lower particle opacity to keep text readable */
+@media (max-width: 600px) {
+  #particles { opacity: 0.3; }
+}
+
+/* Touch device tweaks — disable lift-on-hover that feels stuck on tap */
+@media (hover: none) {
+  .benefit:hover, .feature-card:hover, .study:hover,
+  .macro-card:hover, .food-col:hover, .glass:hover,
+  .tl-card:hover, .science-step:hover, .next-link:hover {
+    transform: none;
+  }
+  .food-list li:hover { transform: none; }
+}
+
+/* Safe area for devices with notches */
+@supports (padding: max(0px)) {
+  .nav { top: max(12px, env(safe-area-inset-top)); }
+  .hero { padding-left: max(20px, env(safe-area-inset-left));
+          padding-right: max(20px, env(safe-area-inset-right)); }
+}
+
+/* Reduce motion respect */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .bg-blob, .orb-ring, .orb-core, .molecule, .float-card, .scroll-line::after { animation: none; }
+}
