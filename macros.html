@@ -185,21 +185,42 @@
         </form>
 
         <div class="calc-results">
-          <div class="calc-result">
-            <span class="calc-result-label">Daily calories</span>
-            <span class="calc-result-val"><span id="r-cal">—</span><span>kcal</span></span>
+          <div class="result-hero">
+            <div class="rh-label">Daily target</div>
+            <div class="rh-num"><span id="r-cal">—</span><span class="rh-unit">kcal</span></div>
+            <div class="rh-sub">based on your BMR &amp; activity</div>
           </div>
-          <div class="calc-result">
-            <span class="calc-result-label">Fat (75%)</span>
-            <span class="calc-result-val"><span id="r-fat">—</span><span>g</span></span>
-          </div>
-          <div class="calc-result">
-            <span class="calc-result-label">Protein (20%)</span>
-            <span class="calc-result-val"><span id="r-pro">—</span><span>g</span></span>
-          </div>
-          <div class="calc-result">
-            <span class="calc-result-label">Carbs (5%)</span>
-            <span class="calc-result-val"><span id="r-carb">—</span><span>g</span></span>
+
+          <div class="result-macros">
+            <div class="rm-card fat">
+              <div class="rm-head">
+                <div class="rm-dot"></div>
+                <span>Fat</span>
+                <span class="rm-pct">75%</span>
+              </div>
+              <div class="rm-num"><span id="r-fat">—</span><span class="rm-unit">g</span></div>
+              <div class="rm-bar"><span style="width:75%"></span></div>
+            </div>
+
+            <div class="rm-card protein">
+              <div class="rm-head">
+                <div class="rm-dot"></div>
+                <span>Protein</span>
+                <span class="rm-pct">20%</span>
+              </div>
+              <div class="rm-num"><span id="r-pro">—</span><span class="rm-unit">g</span></div>
+              <div class="rm-bar"><span style="width:20%"></span></div>
+            </div>
+
+            <div class="rm-card carb">
+              <div class="rm-head">
+                <div class="rm-dot"></div>
+                <span>Carbs</span>
+                <span class="rm-pct">5%</span>
+              </div>
+              <div class="rm-num"><span id="r-carb">—</span><span class="rm-unit">g</span></div>
+              <div class="rm-bar"><span style="width:5%"></span></div>
+            </div>
           </div>
         </div>
       </div>
